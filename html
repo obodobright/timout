@@ -1,0 +1,24 @@
+ <div id="popup">
+        <div id="popup-content">
+            <a style="font-size:30px;position: relative; left:80%;cursor: pointer;top:-10px" id="times-btn">&times;</a>
+            <h1 class="popup-head" style="text-align: center;margin:0.5em">RAMADAN IS HERE
+            </h1>
+            <P style="font-size:18px;margin: 0.3em;">Who you allow us go throught this Ramdan with you? <br> we are grouping ourselves for this holy month</P>
+
+            <button id="popup-btn" style="outline:none;border:none; padding:5px 10px;margin:1em; cursor:pointer;background:white ;color:black">Join Us</button>
+        </div>
+    </div>
+    
+    <script>
+    const timesBtn = document.getElementById('times-btn');
+    const popup = document.getElementById('popup');
+    const popupBtn = document.getElementById('popup-btn');
+
+
+    timesBtn.addEventListener('click', function() {
+        popup.style.display = 'none'
+    })
+
+    setTimeout(() => {
+        popup.style.display = 'block'
+    }, 3000)
